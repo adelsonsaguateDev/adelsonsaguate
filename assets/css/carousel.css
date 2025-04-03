@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #777;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.mb-6 {
+  margin-bottom: 2.5rem;
+}
+
+/* Carrossel */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 500px;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:#8074b3;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.carousel-caption h4 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.carousel-caption p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* Botões de Navegação */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+  border: none;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-btn-prev {
+  left: 20px;
+}
+
+.carousel-btn-next {
+  right: 20px;
+}
+
+/* Indicadores */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.carousel-indicator {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-indicator.active {
+  background-color: #333;
+}
+
+/* Miniaturas */
+.carousel-thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.carousel-thumbnail {
+  width: 100px;
+  height: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+  object-fit: cover;
+}
+
+.carousel-thumbnail.active {
+  opacity: 1;
+  border-color: #695aa6;
+}
+
+/* Galeria de imagens adicionais */
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.gallery-image {
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  object-fit: cover;
+  transition: transform 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 2s forwards;
+  animation-delay: calc(0.2s * var(--index));
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.show {
+  opacity: 1;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.modal.show .modal-content {
+  transform: scale(1);
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 5px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.project-details {
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 1.5s ease, opacity 1s ease, padding 0.5s ease;
+}
+
+.project-details.show {
+  max-height: 2000px;
+  opacity: 1;
+  padding: 20px;
+}
+
+.project-details.extended-view {
+  transition: max-height 3s ease, opacity 1.5s ease, padding 0.5s ease;
+}
+
+.project-details h3 {
+  margin-bottom: 15px;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  transition-delay: 0.2s;
+}
+
+.project-details.show h3 {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.project-details p {
+  margin-bottom: 10px;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  transition-delay: 0.4s;
+}
+
+.project-details.show p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  transition-delay: 0.6s;
+}
+
+.project-details.show .tech-tags {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.tech-tag {
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.view-details-btn {
+  background-color: #695aa6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: 500;
+}
+
+.view-details-btn:hover {
+  background-color: #3367d6;
+  transform: translateY(-2px);
+}
+
+.view-details-btn:active {
+  transform: translateY(0);
+}
+
+.gallery-heading {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  transition-delay: 0.8s;
+}
+
+.project-details.show .gallery-heading {
+  transform: translateY(0);
+  opacity: 1;
+}
