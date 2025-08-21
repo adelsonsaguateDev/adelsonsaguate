@@ -55,7 +55,7 @@ body {
 
 .carousel {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
   height: 500px;
 }
 
@@ -366,4 +366,23 @@ body {
 .project-details.show .gallery-heading {
   transform: translateY(0);
   opacity: 1;
+}
+
+.github-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.github-btn:hover {
+    background-color: #555;
+}
+
+.github-btn i {
+    margin-right: 8px;
 }

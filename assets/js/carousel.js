@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
           "assets/imgs/projectos/project1/3.png",
           "assets/imgs/projectos/project1/4.png",
         ],
+        githubUrl: "https://github.com/adelsonsaguateDev/costs",
       },
       {
         id: "project2",
@@ -23,12 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
         mainImage: "assets/imgs/folio-2.png",
         technologies: ["Laravel", "PHP", "JavaScript", "CSS", "MySQL"],
         gallery: [
-        "assets/imgs/projectos/project2/1.png",
-        "assets/imgs/projectos/project2/2.png",
-        "assets/imgs/projectos/project2/3.png",
-        "assets/imgs/projectos/project2/4.png",
-        "assets/imgs/projectos/project2/5.png",
+          "assets/imgs/projectos/project2/1.png",
+          "assets/imgs/projectos/project2/2.png",
+          "assets/imgs/projectos/project2/3.png",
+          "assets/imgs/projectos/project2/4.png",
+          "assets/imgs/projectos/project2/5.png",
         ],
+        githubUrl: "https://github.com/adelsonsaguateDev/gestao_armazens",
       },
       {
         id: "project3",
@@ -38,12 +40,12 @@ document.addEventListener("DOMContentLoaded", function () {
         mainImage: "assets/imgs/folio-3.png",
         technologies: ["Laravel", "PHP", "JavaScript", "CSS", "MySQL"],
         gallery: [
-        "assets/imgs/projectos/project3/1.png",
-        "assets/imgs/projectos/project3/2.png",
-        "assets/imgs/projectos/project3/3.png",
-        "assets/imgs/projectos/project3/4.png",
-
-            ],
+          "assets/imgs/projectos/project3/1.png",
+          "assets/imgs/projectos/project3/2.png",
+          "assets/imgs/projectos/project3/3.png",
+          "assets/imgs/projectos/project3/4.png",
+        ],
+        githubUrl: "https://github.com/adelsonsaguateDev/gestao_salas",
       },
     ];
 
@@ -64,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const detailTitle = document.getElementById("detailTitle");
     const detailDescription = document.getElementById("detailDescription");
     const detailTechs = document.getElementById("detailTechs");
+    const githubLinkContainer = document.getElementById("githubLinkContainer");
 
     let currentIndex = 0;
     const slideWidth = 100; // em porcentagem
@@ -169,6 +172,13 @@ document.addEventListener("DOMContentLoaded", function () {
           `;
       });
       projectGallery.innerHTML = galleryHTML;
+
+      // Adicionar link do GitHub
+      if (currentProject.githubUrl) {
+        githubLinkContainer.innerHTML = `<a href="${currentProject.githubUrl}" target="_blank" class="btn btn-primary github-btn"><i class="ti-github"></i> Ver no GitHub</a>`;
+      } else {
+        githubLinkContainer.innerHTML = "";
+      }
 
       // Adicionar event listeners para as imagens da galeria
       document.querySelectorAll(".gallery-image").forEach((img) => {
@@ -280,7 +290,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function startAutoplay() {
       autoplayInterval = setInterval(() => {
         goToSlide(currentIndex + 1);
-      }, 5000); // Trocar slide a cada 5 segundos
+      }, 10000); // Trocar slide a cada 10 segundos
     }
 
     function stopAutoplay() {
