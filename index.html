@@ -1,376 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
- 
-   <meta
-    http-equiv="content-type"
-    content="text/html;charset=utf-8"
-  />
- 
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="Adelson Saguate - Portfólio de Engenharia de Desenvolvimento de Sistemas. Conheça meus projetos em desenvolvimento web, mobile, gestão de bases de dados e integração de sistemas."/>
-    <meta name="author" content="Adelson"/>
-    <title>Adelson Saguate | Portfólio</title>
-    <!-- Favicon - Adicione seu favicon aqui -->
-    <!-- <link rel="icon" href="assets/imgs/favicon.ico" type="image/x-icon"> -->
-    <!-- font icons -->
-    <link
-      rel="stylesheet"
-      href="assets/vendors/themify-icons/css/themify-icons.css"
-    />
-    <!-- Bootstrap + Adelson main styles -->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/carousel.css" />
-   
-  </head>
+<html lang="pt-BR">
 
-  <body data-spy="scroll" data-target=".custom-navbar" data-offset="40" id="home">
-    <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
-      <div class="container">
-        <a class="logo" href="#">Adelson</a>
-        <ul class="nav">
-          <li class="item">
-            <a class="link" href="#home">Home</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#about">Sobre</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#contact">Contacto</a>
-          </li>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description"
+    content="Adelson Saguate - Portfólio de Engenharia de Desenvolvimento de Sistemas. Conheça meus projetos em desenvolvimento web, mobile, gestão de bases de dados e integração de sistemas." />
+  <meta name="author" content="Adelson" />
+  <title>Adelson Saguate | Eng. de Desenvolvimento de Sistemas</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+
+  <div class="main-container">
+    <!-- ================== LEFT PANE (Fixed) ================== -->
+    <aside class="left-pane">
+      <div class="profile-header">
+        <h1 class="profile-name"><a href="#intro">Adelson Saguate</a></h1>
+        <h2 class="profile-title">Eng. de Desenvolvimento de Sistemas</h2>
+        <p class="profile-bio">Eu construo soluções digitais que resolvem problemas do mundo real.</p>
+      </div>
+
+      <nav class="main-nav">
+        <ul id="nav-links">
+          <li><a class="nav-link" href="#about"><span class="nav-indicator"></span><span class="nav-text">Sobre</span></a></li>
+          <li><a class="nav-link" href="#portfolio"><span class="nav-indicator"></span><span class="nav-text">Portfolio</span></a></li>
+          <li><a class="nav-link" href="#contact"><span class="nav-indicator"></span><span class="nav-text">Contacto</span></a></li>
         </ul>
-        <a
-          href="javascript:void(0)"
-          id="nav-toggle"
-          class="hamburger hamburger--elastic"
-        >
-          <div class="hamburger-box">
-            <div class="hamburger-inner"></div>
-          </div>
-        </a>
+      </nav>
+
+      <div class="social-links">
+        <a href="https://github.com/adelsonsaguateDev/" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="ti-github"></i></a>
+        <a href="https://www.linkedin.com/in/adelsonsaguate/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="ti-linkedin"></i></a>
+        <a href="mailto:adelsonsaguate.it@gmail.com" title="Email"><i class="ti-email"></i></a>
       </div>
-    </nav>
-    <!-- End of Page Navbar -->
+    </aside>
 
-    <!-- page header -->
-    <header id="home" class="header">
-      <div class="overlay"></div>
-      <div class="header-content container">
-        <h1 class="header-title">
-          <span class="up">Ola!</span>
-          <span class="down"> Aqui, Adelson <span>Saguate</span> </span>
-        </h1>
-        <p class="header-subtitle">ENG. DE DESENVOLVIMENTO DE SISTEMAS</p>
+    <!-- ================== RIGHT PANE (Scrollable) ================== -->
+    <main id="main-content" class="right-pane">
 
-        <a href="#portfolio" class="btn btn-primary">Visite meus trabalhos</a>
-      </div>
-    </header>
-    <!-- end of page header -->
+      <!-- INTRO SECTION (Hidden, only for nav target) -->
+      <section id="intro" class="content-section" style="display: none;"></section>
 
-    <!-- about section -->
-    <section class="section pt-0" id="about">
-      <!-- container -->
-      <div class="container text-center">
-        <!-- about wrapper -->
-        <div class="about">
-          <div class="about-img-holder" style="margin-left: -8rem">
-            <img
-              src="assets/imgs/perfil2.PNG"
-              class="about-img"
-              alt=""
-            />
-          </div>
-          <div class="about-caption">
-            <p class="section-subtitle">Quem eu sou?</p>
-            <h2 class="section-title mb-3">Sobre mim</h2>
-            <p class="justificado">
-              Sou um desenvolvedor de software com experiência na concepção e
-              implementação de soluções web e mobile, especializado na
-              otimização de bases de dados, integração de APIs e melhoria da
-              experiência do utilizador. Tenho formação em Engenharia de
-              Desenvolvimento de Sistemas/Software pela Universidade Pedagógica
-              de Maputo e um forte interesse por inovação tecnológica aplicada à
-              gestão empresarial e automação de processos. Actualmente, trabalho
-              como Desenvolvedor de Sistemas, focando-me na manutenção e
-              desenvolvimento de soluções ERP para entidades públicas e
-              privadas. Tenho experiência na criação de sistemas de gestão
-              financeira, reconciliação bancária, farmácia, stock e crédito
-              agrário, sempre com foco em segurança, desempenho e usabilidade.
-            </p>
-            <button
-              type="button"
-              id="baixar_cv"
-              class="btn-rounded btn btn-outline-primary mt-4"
-            >
-              Baixar CV
-            </button>
+      <!-- ABOUT SECTION -->
+      <section id="about" class="content-section">
+        <div data-aos="fade-up">
+          <h2 class="numbered-heading"><span>01.</span> Sobre Mim</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                Olá! Sou o Adelson, um desenvolvedor de software com experiência na concepção e implementação de soluções web e mobile. Minha especialidade é a otimização de bases de dados, integração de APIs e a melhoria da experiência do utilizador.
+              </p>
+              <p>
+                Tenho formação em Engenharia de Desenvolvimento de Sistemas pela Universidade Pedagógica de Maputo e um forte interesse por inovação tecnológica aplicada à gestão empresarial e automação de processos.
+              </p>
+              <p>
+                Actualmente, trabalho como Desenvolvedor de Sistemas, focando-me na manutenção e desenvolvimento de soluções ERP para entidades públicas e privadas, com foco em segurança, desempenho e usabilidade.
+              </p>
+            </div>
+            <div class="about-image">
+              <img src="assets/imgs/perfil2.PNG" alt="Adelson Saguate">
+            </div>
           </div>
         </div>
-        <!-- end of about wrapper -->
-      </div>
-      <!-- end of container -->
-    </section>
-    <!-- end of about section -->
+      </section>
 
-    <!-- service section -->
-    <section class="section" id="service">
-      <div class="container text-center">
-        <p class="section-subtitle">O que eu faço?</p>
-        <h6 class="section-title mb-6">Serviço</h6>
-        <!-- row -->
-        <div class="row">
-          <div class="col-md-6 col-lg-3">
-            <div class="service-card">
-              <div class="body">
-                <img
-                  src="assets/imgs/pencil-case.svg"
-                  alt=""
-                  class="icon"
-                />
-                <h6 class="title">Desenvolvimento de Software & Web</h6>
-                <p class="subtitle">
-                  💻 Criação de aplicações web e mobile com PHP (Laravel),
-                  JavaScript (React) e Python (Flask).
-                </p>
+      <!-- PORTFOLIO SECTION -->
+      <section id="portfolio" class="content-section">
+        <div data-aos="fade-up">
+          <h2 class="numbered-heading"><span>02.</span> Projetos que Construí</h2>
+          
+          <ul class="featured-projects-list">
+            <!-- Project 1 -->
+            <li class="featured-project" data-aos="fade-up">
+              <div class="project-content">
+                <p class="project-overline">Projeto em Destaque</p>
+                <h3 class="project-title"><a href="https://github.com/adelsonsaguateDev/costs" target="_blank">Gestão de Projetos</a></h3>
+                <div class="project-description">
+                  <p>Sistema completo de gestão de projetos com acompanhamento de tarefas, prazos e recursos. Permite gerenciar múltiplos projetos simultaneamente, com dashboards personalizados.</p>
+                </div>
+                <ul class="project-tech-list">
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>CSS</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/adelsonsaguateDev/costs" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="ti-github"></i></a>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="service-card">
-              <div class="body">
-                <img
-                  src="assets/imgs/responsive.svg"
-                  alt=""
-                  class="icon"
-                />
-                <h6 class="title">Administrador de Bases de Dados</h6>
-                <p class="subtitle">
-                  🗄️ Gestão e otimização de MySQL e PostgreSQL para garantir
-                  alto desempenho.
-                </p>
+              <div class="project-image">
+                <a href="https://github.com/adelsonsaguateDev/costs" target="_blank">
+                  <img src="assets/imgs/folio-1.png" alt="Gestão de Projetos">
+                </a>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="service-card">
-              <div class="body">
-                <img
-                  src="assets/imgs/toolbox.svg"
-                  alt=""
-                  class="icon"
-                />
-                <h6 class="title">Especialista em Integração de Sistemas:</h6>
-                <p class="subtitle">
-                  🔗 Desenvolvimento e integração de APIs RESTful, incluindo
-                  serviços de terceiros.
-                </p>
+            </li>
+
+            <!-- Project 2 -->
+            <li class="featured-project" data-aos="fade-up">
+              <div class="project-content">
+                <p class="project-overline">Projeto em Destaque</p>
+                <h3 class="project-title"><a href="https://github.com/adelsonsaguateDev/gestao_armazens" target="_blank">Gestão de Armazéns</a></h3>
+                <div class="project-description">
+                  <p>Sistema abrangente para controle de estoque e logística de armazéns. Inclui funcionalidades para rastreamento de produtos, gestão de inventário e otimização de espaço.</p>
+                </div>
+                <ul class="project-tech-list">
+                  <li>Laravel</li>
+                  <li>PHP</li>
+                  <li>JavaScript</li>
+                  <li>MySQL</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/adelsonsaguateDev/gestao_armazens" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="ti-github"></i></a>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="service-card">
-              <div class="body">
-                <img
-                  src="assets/imgs/analytics.svg"
-                  alt=""
-                  class="icon"
-                />
-                <h6 class="title">Especialista em Qualidade e Testes:</h6>
-                <p class="subtitle">
-                  🛠️ Automação de testes com Selenium e implementação de
-                  práticas de segurança.
-                </p>
+              <div class="project-image">
+                <a href="https://github.com/adelsonsaguateDev/gestao_armazens" target="_blank">
+                  <img src="assets/imgs/folio-2.png" alt="Gestão de Armazéns">
+                </a>
               </div>
-            </div>
-          </div>
+            </li>
+
+            <!-- Project 3 -->
+            <li class="featured-project" data-aos="fade-up">
+              <div class="project-content">
+                <p class="project-overline">Projeto em Destaque</p>
+                <h3 class="project-title"><a href="https://github.com/adelsonsaguateDev/gestao_salas" target="_blank">Portal de Gestão de Salas</a></h3>
+                <div class="project-description">
+                  <p>Solução para instituições educacionais gerenciarem a alocação de salas para exames. Permite agendamento, controle de capacidade e monitoramento de ocupação em tempo real.</p>
+                </div>
+                <ul class="project-tech-list">
+                  <li>Laravel</li>
+                  <li>PHP</li>
+                  <li>JavaScript</li>
+                  <li>MySQL</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/adelsonsaguateDev/gestao_salas" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="ti-github"></i></a>
+                </div>
+              </div>
+              <div class="project-image">
+                <a href="https://github.com/adelsonsaguateDev/gestao_salas" target="_blank">
+                  <img src="assets/imgs/folio-3.png" alt="Portal de Gestão de Salas de Exame">
+                </a>
+              </div>
+            </li>
+          </ul>
         </div>
-        <!-- end of row -->
-      </div>
-    </section>
-    <!-- end of service section -->
+      </section>
 
-    <!-- Portfolio Section -->
-    <section class="section" id="portfolio">
-      <div class="container text-center">
-        <p class="section-subtitle">O que eu fiz?</p>
-        <h6 class="section-title mb-6">Portfólio</h6>
-
-        <!-- Carrossel Principal -->
-        <div class="carousel-container">
-          <div class="carousel" id="projectCarousel">
-            <!-- Slides serão gerados dinamicamente -->
-          </div>
-
-          <button class="carousel-btn carousel-btn-prev">&#10094;</button>
-          <button class="carousel-btn carousel-btn-next">&#10095;</button>
-        </div>
-
-        <!-- Indicadores -->
-        <div class="carousel-indicators" id="carouselIndicators">
-          <!-- Indicadores serão gerados dinamicamente -->
-        </div>
-
-        <!-- Miniaturas -->
-        <div class="carousel-thumbnails" id="carouselThumbnails">
-          <!-- Miniaturas serão geradas dinamicamente -->
-        </div>
-
-        <!-- Botão para ver detalhes -->
-        <button class="view-details-btn" id="viewDetailsBtn">
-          Ver detalhes do projecto
-        </button>
-
-        <!-- Detalhes do Projeto Atual -->
-        <div class="project-details" id="projectDetails">
-          <h3 id="detailTitle"></h3>
-          <p id="detailDescription"></p>
-          <div>
-            <h4>Tecnologias utilizadas:</h4>
-            <div class="tech-tags" id="detailTechs"></div>
-          </div>
-
-          <div id="githubLinkContainer" class="mt-3"></div>
-
-          <!-- Galeria de imagens adicionais -->
-          <h4 class="gallery-heading">Mais imagens do projecto:</h4>
-          <div class="project-gallery" id="projectGallery">
-            <!-- Imagens da galeria serão geradas dinamicamente -->
-          </div>
-        </div>
-
-        <!-- Modal para visualização de imagens -->
-        <div class="modal" id="imageModal">
-          <span class="close-modal">&times;</span>
-          <div class="modal-content">
-            <img id="modalImage" src="" alt="Imagem ampliada" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end of portflio section -->
-
-    <!-- section -->
-    <section class="section-sm bg-primary">
-      <!-- container -->
-      <div class="container text-center text-sm-left">
-        <!-- row -->
-        <div class="row align-items-center">
-          <div class="col-sm offset-md-1 mb-4 mb-md-0">
-            <h6 class="title text-light">Quer trabalhar comigo?</h6>
-            <p class="m-0 text-light">
-              Sinta-se sempre à vontade para entrar em contacto.
-            </p>
-          </div>
-          <div class="col-sm offset-sm-2 offset-md-3">
-            <a href="#contact" class="btn btn-lg my-font btn-light rounded">
-              contacte-me
-            </a>
-          </div>
-        </div>
-        <!-- end of row -->
-      </div>
-      <!-- end of container -->
-    </section>
-    <!-- end of section -->
-
-    <!-- contact section -->
-    <section class="section" id="contact">
-      <div class="container text-center">
-        <p class="section-subtitle">Como você pode se comunicar?</p>
-        <h6 class="section-title mb-5">Entre em contacto comigo</h6>
-        <!-- contact form -->
-        <form action="#" class="contact-form col-md-10 col-lg-8 m-auto">
-          <div class="form-row">
-            <div class="form-group col-sm-6">
-              <input
-                type="text"
-                size="50"
-                class="form-control"
-                placeholder="Insira seu nome"
-                required
-              />
-            </div>
-            <div class="form-group col-sm-6">
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Insira o seu email"
-                requried
-              />
-            </div>
-            <div class="form-group col-sm-12">
-              <textarea
-                name="comment"
-                id="comment"
-                rows="6"
-                class="form-control"
-                placeholder="Escreva a sua mensagem"
-              ></textarea>
-            </div>
-            <div class="form-group col-sm-12 mt-3">
-              <input
-                type="submit"
-                value="Enviar Mensagem"
-                class="btn btn-outline-primary rounded"
-              />
-            </div>
-          </div>
-        </form>
-        <!-- end of contact form -->
-      </div>
-      <!-- end of container -->
-    </section>
-    <!-- end of contact section -->
-
-    <!-- footer -->
-    <div class="container">
-      <footer class="footer">
-        <p class="mb-0">
-          Copyright
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
-          &copy;
-          <a href="https://www.linkedin.com/in/adelsonsaguate/">Adelson Saguate</a> Distribution
-          <a href="https://themewagon.com/">ThemeWagon</a>
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="content-section contact-section" data-aos="fade-up">
+        <h2 class="numbered-heading"><span>03.</span> Qual o próximo passo?</h2>
+        <h3 class="contact-title">Entre em Contacto</h3>
+        <p class="contact-text">
+          Estou sempre aberto a novas oportunidades e colaborações. Se você tem um projeto em mente, uma pergunta ou apenas quer dizer olá, minha caixa de entrada está sempre aberta.
         </p>
-        <div class="social-links text-right m-auto ml-sm-auto">
-          <a href="https://www.linkedin.com/in/adelsonsaguate/" class="link"
-            ><i class="ti-linkedin"></i
-          ></a>
-          <a href="https://github.com/adelsonsaguateDev/" class="link"
-            ><i class="ti-github"></i
-          ></a>
-          <a href="mailto:adelsonsaguate.it@gmail.com" class="link"
-            ><i class="ti-email"></i
-          ></a>
-        </div>
+        <a href="mailto:adelsonsaguate.it@gmail.com" class="btn btn-primary">Diga Olá</a>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="main-footer">
+        <p>
+          <a href="https://github.com/adelsonsaguateDev/adelsonsaguate.porfolio" target="_blank" rel="noopener noreferrer">
+            Inspirado em Brittany Chiang. Construído por Adelson Saguate &amp; Gemini
+          </a>
+        </p>
       </footer>
-    </div>
-    <!-- end of page footer -->
+    </main>
+  </div>
 
-    <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+  <!-- AOS (Animate on Scroll) JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
 
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Main js -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/carousel.js"></script>
-
-    <!-- Sugestão: Para produção, considere minificar os arquivos JS e CSS para melhor desempenho. -->
-
-  </body>
-
-
+</body>
 </html>

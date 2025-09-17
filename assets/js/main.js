@@ -1,46 +1,45 @@
-/*!
-=========================================================
-* Adelson Landing page
-=========================================================
+document.addEventListener('DOMContentLoaded', () => {
 
-* Copyright: 2025 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com & Adelson Saguate
+  // Initialize Animate on Scroll
+  AOS.init({
+    duration: 600,
+    once: true,
+    offset: 50, // offset (in px) from the original trigger point
+  });
 
-=========================================================
+  const mainContent = document.getElementById('main-content');
+  const navLinks = document.querySelectorAll('.main-nav .nav-link');
+  const sections = document.querySelectorAll('.content-section');
 
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
+  if (!mainContent || !navLinks.length || !sections.length) {
+    return; // Exit if essential elements are not found
+  }
 
-// smooth scroll
-$(document).ready(function(){
-    $(".navbar .nav-link").on('click', function(event) {
+  // Function to update active nav link
+  const updateActiveLink = () => {
+    let currentSectionId = '';
 
-        if (this.hash !== "") {
-
-            event.preventDefault();
-
-            var hash = this.hash;
-
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 700, function(){
-                window.location.hash = hash;
-            });
-        } 
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      // Check if section is in the viewport (with a 150px offset)
+      if (mainContent.scrollTop >= sectionTop - 150) {
+        currentSectionId = section.getAttribute('id');
+      }
     });
 
-    // Explicitly initialize Bootstrap Scrollspy
-    $('body').scrollspy({ target: '.custom-navbar', offset: 40 });
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      // The href attribute looks like "#about", we need to match it with the section id
+      if (link.getAttribute('href') === `#${currentSectionId}`) {
+        link.classList.add('active');
+      }
+    });
+  };
 
-    $(document).on("click", "#baixar_cv", function (e) {
-        e.preventDefault();
-        window.open("assets/cv/Adelson_Manuel_Saguate_CV.pdf", "_blank");
-      });
-});
+  // Listen for scroll events on the main content pane
+  mainContent.addEventListener('scroll', updateActiveLink);
 
-// navbar toggle
-$('#nav-toggle').click(function(){
-    $(this).toggleClass('is-active')
-    $('ul.nav').toggleClass('show');
+  // Initial call to set the active link on page load
+  updateActiveLink();
+
 });
