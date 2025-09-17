@@ -1,188 +1,1327 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Adelson Saguate - Engenheiro de Desenvolvimento de Sistemas especializado em soluções ERP, desenvolvimento web e mobile para entidades públicas e privadas em Moçambique."
+    />
+    <meta name="author" content="Adelson Saguate" />
+    <title>Adelson Saguate | Desenvolvedor de Sistemas</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description"
-    content="Adelson Saguate - Portfólio de Engenharia de Desenvolvimento de Sistemas. Conheça meus projetos em desenvolvimento web, mobile, gestão de bases de dados e integração de sistemas." />
-  <meta name="author" content="Adelson" />
-  <title>Adelson Saguate | Eng. de Desenvolvimento de Sistemas</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/imgs/favicon.svg" />
+    <!-- Fonts & Icons -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/themify-icons/css/themify-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts & Icons -->
-  <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <!-- Main Styles -->
-  <link rel="stylesheet" href="assets/css/main.css" />
-</head>
+    <!-- Main Styles -->
+    <style>
+      :root {
+        --dark-navy: #0a192f;
+        --navy: #112240;
+        --light-navy: #233554;
+        --lightest-navy: #303c55;
+        --navy-shadow: rgba(2, 12, 27, 0.7);
 
-<body>
+        --slate: #8892b0;
+        --light-slate: #a8b2d1;
+        --lightest-slate: #ccd6f6;
 
-  <div class="main-container">
-    <!-- ================== LEFT PANE (Fixed) ================== -->
-    <aside class="left-pane">
-      <div class="profile-header">
-        <h1 class="profile-name"><a href="#intro">Adelson Saguate</a></h1>
-        <h2 class="profile-title">Eng. de Desenvolvimento de Sistemas</h2>
-        <p class="profile-bio">Eu construo soluções digitais que resolvem problemas do mundo real.</p>
-      </div>
+        --white: #e6f1ff;
+        --green: #64ffda;
+        --green-tint: rgba(100, 255, 218, 0.1);
 
-      <nav class="main-nav">
-        <ul id="nav-links">
-          <li><a class="nav-link" href="#about"><span class="nav-indicator"></span><span class="nav-text">Sobre</span></a></li>
-          <li><a class="nav-link" href="#portfolio"><span class="nav-indicator"></span><span class="nav-text">Portfolio</span></a></li>
-          <li><a class="nav-link" href="#contact"><span class="nav-indicator"></span><span class="nav-text">Contacto</span></a></li>
-        </ul>
-      </nav>
+        --font-sans: "Inter", -apple-system, system-ui, sans-serif;
+        --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+          monospace;
 
-      <div class="social-links">
-        <a href="https://github.com/adelsonsaguateDev/" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="ti-github"></i></a>
-        <a href="https://www.linkedin.com/in/adelsonsaguate/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="ti-linkedin"></i></a>
-        <a href="mailto:adelsonsaguate.it@gmail.com" title="Email"><i class="ti-email"></i></a>
-      </div>
-    </aside>
+        --fz-xxs: 12px;
+        --fz-xs: 13px;
+        --fz-sm: 14px;
+        --fz-md: 16px;
+        --fz-lg: 18px;
+        --fz-xl: 20px;
+        --fz-xxl: 22px;
+        --fz-heading: 32px;
 
-    <!-- ================== RIGHT PANE (Scrollable) ================== -->
-    <main id="main-content" class="right-pane">
+        --border-radius: 4px;
+        --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+        --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
 
-      <!-- INTRO SECTION (Hidden, only for nav target) -->
-      <section id="intro" class="content-section" style="display: none;"></section>
+      /* BASE STYLES */
+      html {
+        box-sizing: border-box;
+        width: 100%;
+        scroll-behavior: smooth;
+      }
 
-      <!-- ABOUT SECTION -->
-      <section id="about" class="content-section">
-        <div data-aos="fade-up">
-          <h2 class="numbered-heading"><span>01.</span> Sobre Mim</h2>
-          <div class="about-content">
-            <div class="about-text">
-              <p>
-                Olá! Sou o Adelson, um desenvolvedor de software com experiência na concepção e implementação de soluções web e mobile. Minha especialidade é a otimização de bases de dados, integração de APIs e a melhoria da experiência do utilizador.
-              </p>
-              <p>
-                Tenho formação em Engenharia de Desenvolvimento de Sistemas pela Universidade Pedagógica de Maputo e um forte interesse por inovação tecnológica aplicada à gestão empresarial e automação de processos.
-              </p>
-              <p>
-                Actualmente, trabalho como Desenvolvedor de Sistemas, focando-me na manutenção e desenvolvimento de soluções ERP para entidades públicas e privadas, com foco em segurança, desempenho e usabilidade.
-              </p>
-            </div>
-            <div class="about-image">
-              <img src="assets/imgs/perfil2.PNG" alt="Adelson Saguate">
-            </div>
-          </div>
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+        width: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        background-color: var(--dark-navy);
+        color: var(--slate);
+        font-family: var(--font-sans);
+        font-size: var(--fz-xl);
+        line-height: 1.3;
+      }
+
+      .main-container {
+        display: flex;
+        min-height: 100vh;
+      }
+
+      .left-pane {
+        width: 40%;
+        min-width: 450px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 60px;
+        background-color: var(--dark-navy);
+        z-index: 10;
+      }
+
+      .right-pane {
+        width: 60%;
+        margin-left: 40%;
+        padding: 60px;
+      }
+
+      section.content-section {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+
+      /* LEFT PANE STYLES */
+      .profile-header .profile-name a {
+        color: var(--lightest-slate);
+        font-size: 48px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: var(--transition);
+      }
+
+      .profile-header .profile-name a:hover {
+        color: var(--green);
+      }
+
+      .profile-header .profile-title {
+        color: var(--white);
+        font-size: 24px;
+        margin-top: 10px;
+        font-weight: 600;
+      }
+
+      .profile-header .profile-bio {
+        color: var(--slate);
+        font-size: var(--fz-lg);
+        margin-top: 15px;
+        line-height: 1.5;
+      }
+
+      .main-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .main-nav li {
+        margin-bottom: 15px;
+      }
+
+      .nav-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--slate);
+        font-weight: 700;
+        font-size: var(--fz-sm);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        transition: var(--transition);
+      }
+
+      .nav-link .nav-indicator {
+        width: 30px;
+        height: 2px;
+        background-color: var(--slate);
+        margin-right: 15px;
+        transition: var(--transition);
+      }
+
+      .nav-link:hover .nav-indicator,
+      .nav-link.active .nav-indicator {
+        width: 60px;
+        background-color: var(--green);
+      }
+
+      .nav-link:hover .nav-text,
+      .nav-link.active .nav-text {
+        color: var(--green);
+      }
+
+      .social-links a {
+        color: var(--slate);
+        font-size: 24px;
+        margin-right: 25px;
+        transition: var(--transition);
+      }
+
+      .social-links a:hover {
+        color: var(--green);
+        transform: translateY(-3px);
+      }
+
+      /* INTRO SECTION */
+      .intro-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 0;
+      }
+
+      .intro-hello {
+        color: var(--green);
+        font-family: var(--font-mono);
+        font-size: var(--fz-md);
+        margin-bottom: 20px;
+      }
+
+      .intro-name-main {
+        color: var(--lightest-slate);
+        font-size: clamp(40px, 8vw, 80px);
+        font-weight: 700;
+        margin: 0;
+        line-height: 1.1;
+      }
+
+      .intro-tagline {
+        color: var(--slate);
+        font-size: clamp(30px, 7vw, 70px);
+        font-weight: 700;
+        margin: 0;
+        margin-top: 10px;
+        line-height: 1.1;
+      }
+
+      .intro-bio {
+        color: var(--slate);
+        max-width: 540px;
+        /* margin-top: 25px; */
+        font-size: var(--fz-lg);
+      }
+
+      .intro-section .btn {
+        margin-top: 50px;
+        align-self: flex-start;
+      }
+
+      .numbered-heading {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 10px 0 40px;
+        width: 100%;
+        font-size: var(--fz-heading);
+        white-space: nowrap;
+        color: var(--lightest-slate);
+        font-weight: 600;
+      }
+
+      .numbered-heading span {
+        color: var(--green);
+        margin-right: 15px;
+        font-family: var(--font-mono);
+        font-size: var(--fz-xl);
+        font-weight: 400;
+      }
+
+      .numbered-heading::after {
+        content: "";
+        display: block;
+        position: relative;
+        top: 2px;
+        width: 300px;
+        height: 1px;
+        margin-left: 20px;
+        background-color: var(--light-navy);
+      }
+
+      /* ABOUT SECTION */
+      .about-content {
+        display: block;
+      }
+
+      .about-text {
+        width: 100%;
+      }
+
+      .about-text p {
+        margin-bottom: 15px;
+      }
+
+      .tech-skills {
+        margin-top: 30px;
+      }
+
+      .tech-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(140px, 200px));
+        gap: 0px 10px;
+        padding: 0;
+        margin: 20px 0 0 0;
+        overflow: hidden;
+        list-style: none;
+      }
+
+      .tech-grid li {
+        position: relative;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        font-family: var(--font-mono);
+        font-size: var(--fz-xs);
+      }
+
+      .tech-grid li:before {
+        content: "▸";
+        position: absolute;
+        left: 0;
+        color: var(--green);
+        font-size: var(--fz-sm);
+        line-height: 12px;
+      }
+
+      /* EXPERIENCE SECTION */
+      .experience-container {
+        max-width: 700px;
+      }
+
+      .job-tabs {
+        display: flex;
+        position: relative;
+        z-index: 3;
+        width: max-content;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      .job-tab {
+        display: flex;
+        align-items: center;
+        width: var(--tab-width);
+        height: var(--tab-height);
+        padding: 0 20px 2px;
+        border: none;
+        border-bottom: 2px solid var(--lightest-navy);
+        background-color: transparent;
+        color: var(--slate);
+        font-family: var(--font-mono);
+        font-size: var(--fz-xs);
+        text-align: center;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: var(--transition);
+      }
+
+      .job-tab:hover,
+      .job-tab.active {
+        color: var(--green);
+        background-color: var(--green-tint);
+        border-bottom-color: var(--green);
+      }
+
+      .job-panels {
+        position: relative;
+        width: 100%;
+        margin-left: 0;
+      }
+
+      .job-panel {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+        display: none;
+      }
+
+      .job-panel.active {
+        display: block;
+      }
+
+      .job-title {
+        color: var(--lightest-slate);
+        font-size: var(--fz-xxl);
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+
+      .job-company {
+        color: var(--green);
+      }
+
+      .job-date {
+        color: var(--light-slate);
+        font-family: var(--font-mono);
+        font-size: var(--fz-xs);
+        margin-bottom: 25px;
+      }
+
+      .job-details {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: var(--fz-lg);
+      }
+
+      .job-details li {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 10px;
+      }
+
+      .job-details li:before {
+        content: "▸";
+        position: absolute;
+        left: 0;
+        color: var(--green);
+      }
+
+      /* PORTFOLIO SECTION */
+      .featured-projects-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .featured-project {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: center;
+        margin-bottom: 100px;
+      }
+
+      .project-content {
+        position: relative;
+        grid-column: 1 / 7;
+        grid-row: 1 / -1;
+        text-align: left;
+      }
+
+      .featured-project:nth-of-type(odd) .project-content {
+        grid-column: 7 / -1;
+        text-align: right;
+      }
+
+      .project-overline {
+        margin: 10px 0;
+        color: var(--green);
+        font-family: var(--font-mono);
+        font-size: var(--fz-xs);
+        font-weight: 400;
+      }
+
+      .project-title {
+        color: var(--lightest-slate);
+        font-size: var(--fz-xxl);
+        font-weight: 600;
+        line-height: 1.1;
+      }
+
+      .project-title a {
+        text-decoration: none;
+        color: inherit;
+        transition: var(--transition);
+      }
+
+      .project-title a:hover {
+        color: var(--green);
+      }
+
+      .project-description {
+        box-shadow: 0 10px 30px -15px var(--navy-shadow);
+        transition: var(--transition);
+        position: relative;
+        z-index: 2;
+        padding: 25px;
+        border-radius: var(--border-radius);
+        background-color: var(--light-navy);
+        color: var(--light-slate);
+        font-size: var(--fz-lg);
+      }
+
+      .project-tech-list {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 2;
+        margin: 25px 0 10px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .featured-project:nth-of-type(odd) .project-tech-list {
+        justify-content: flex-end;
+      }
+
+      .project-tech-list li {
+        margin: 0 20px 5px 0;
+        color: var(--slate);
+        font-family: var(--font-mono);
+        font-size: var(--fz-xs);
+        white-space: nowrap;
+      }
+
+      .featured-project:nth-of-type(odd) .project-tech-list li {
+        margin: 0 0 5px 20px;
+      }
+
+      .project-links {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-top: 10px;
+        margin-left: -10px;
+      }
+
+      .featured-project:nth-of-type(odd) .project-links {
+        justify-content: flex-end;
+        margin-left: 0;
+        margin-right: -10px;
+      }
+
+      .project-links a {
+        padding: 10px;
+        color: var(--light-slate);
+        font-size: var(--fz-xl);
+        transition: var(--transition);
+      }
+
+      .project-links a:hover {
+        color: var(--green);
+      }
+
+      .project-image {
+        grid-column: 6 / -1;
+        grid-row: 1 / -1;
+        position: relative;
+        z-index: 1;
+      }
+
+      .featured-project:nth-of-type(odd) .project-image {
+        grid-column: 1 / 8;
+      }
+
+      .project-image a {
+        width: 100%;
+        background-color: var(--green);
+        border-radius: var(--border-radius);
+        vertical-align: middle;
+        display: block;
+      }
+
+      .project-image img {
+        width: 100%;
+        max-width: 100%;
+        vertical-align: middle;
+        border-radius: var(--border-radius);
+        mix-blend-mode: multiply;
+        filter: grayscale(100%) contrast(1) brightness(80%);
+        transition: var(--transition);
+      }
+
+      .project-image a:hover img {
+        mix-blend-mode: normal;
+        filter: none;
+      }
+
+      /* CONTACT SECTION */
+      .contact-section {
+        max-width: 600px;
+        text-align: center;
+      }
+
+      .contact-title {
+        font-size: 50px;
+        color: var(--lightest-slate);
+        margin: 0 0 20px;
+        font-weight: 600;
+      }
+
+      .contact-text {
+        color: var(--slate);
+        font-size: var(--fz-lg);
+        margin-bottom: 50px;
+      }
+
+      .btn {
+        color: var(--green);
+        background-color: transparent;
+        border: 1px solid var(--green);
+        border-radius: var(--border-radius);
+        padding: 1.25rem 1.75rem;
+        font-size: var(--fz-sm);
+        font-family: var(--font-mono);
+        line-height: 1;
+        text-decoration: none;
+        cursor: pointer;
+        transition: var(--transition);
+        display: inline-block;
+      }
+
+      .btn:hover {
+        background-color: var(--green-tint);
+        transform: translateY(-3px);
+      }
+
+      /* FOOTER */
+      .main-footer {
+        padding: 20px 0;
+        text-align: center;
+        font-family: var(--font-mono);
+        font-size: var(--fz-xxs);
+      }
+
+      .main-footer a {
+        color: var(--slate);
+        text-decoration: none;
+      }
+
+      .main-footer a:hover {
+        color: var(--green);
+      }
+
+      /* RESPONSIVE DESIGN */
+      @media (max-width: 1080px) {
+        .left-pane,
+        .right-pane {
+          padding: 40px;
+        }
+
+        .numbered-heading::after {
+          width: 200px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .main-container {
+          display: block;
+        }
+
+        .left-pane {
+          position: relative;
+          width: 100%;
+          min-width: unset;
+          padding: 20px;
+          flex-direction: row;
+          align-items: center;
+          z-index: 10;
+        }
+
+        .profile-header {
+          flex-grow: 1;
+        }
+
+        .profile-name a {
+          font-size: 24px;
+        }
+
+        .profile-title,
+        .profile-bio {
+          display: none;
+        }
+
+        .main-nav,
+        .social-links {
+          display: none;
+        }
+
+        .right-pane {
+          width: 100%;
+          margin-left: 0;
+          padding: 20px;
+        }
+
+        section.content-section {
+          padding: 60px 0;
+        }
+
+        .about-content {
+          flex-direction: column;
+        }
+
+        .about-image {
+          width: 60%;
+          margin: 40px auto 0;
+        }
+
+        .tech-grid {
+          grid-template-columns: repeat(2, minmax(140px, 1fr));
+        }
+
+        .job-tabs {
+          flex-direction: column;
+          width: 100%;
+        }
+
+        .job-tab {
+          width: 100%;
+          border-bottom: 2px solid var(--lightest-navy);
+          border-left: 2px solid var(--lightest-navy);
+        }
+
+        .featured-project {
+          display: flex;
+          flex-direction: column;
+          box-shadow: 0 10px 30px -15px var(--navy-shadow);
+          background-color: var(--light-navy);
+          padding: 20px;
+          border-radius: var(--border-radius);
+          margin-bottom: 50px;
+        }
+
+        .project-image,
+        .project-content {
+          all: unset;
+        }
+
+        .project-image img {
+          mix-blend-mode: normal;
+          filter: none;
+          margin-bottom: 20px;
+        }
+
+        .project-description {
+          padding: 0;
+          background: transparent;
+          box-shadow: none;
+        }
+
+        .project-tech-list {
+          justify-content: flex-start;
+        }
+
+        .project-tech-list li {
+          margin: 0 10px 5px 0;
+        }
+
+        .project-links {
+          justify-content: flex-start;
+          margin-left: -10px;
+        }
+
+        .contact-title {
+          font-size: 40px;
+        }
+      }
+
+      /* AOS Animation */
+      [data-aos="fade-up"] {
+        transform: translateY(20px);
+        opacity: 0;
+        transition-property: transform, opacity;
+      }
+
+      [data-aos="fade-up"].aos-animate {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <!-- ================== LEFT PANE (Fixed) ================== -->
+      <aside class="left-pane">
+        <div class="profile-header">
+          <h1 class="profile-name"><a href="#intro">Adelson Saguate</a></h1>
+          <h2 class="profile-title">Desenvolvedor de Sistemas</h2>
+          <p class="profile-bio">
+            Especialista em soluções ERP e desenvolvimento web para
+            transformação digital.
+          </p>
         </div>
-      </section>
 
-      <!-- PORTFOLIO SECTION -->
-      <section id="portfolio" class="content-section">
-        <div data-aos="fade-up">
-          <h2 class="numbered-heading"><span>02.</span> Projetos que Construí</h2>
-          
-          <ul class="featured-projects-list">
-            <!-- Project 1 -->
-            <li class="featured-project" data-aos="fade-up">
-              <div class="project-content">
-                <p class="project-overline">Projeto em Destaque</p>
-                <h3 class="project-title"><a href="https://github.com/adelsonsaguateDev/costs" target="_blank">Gestão de Projetos</a></h3>
-                <div class="project-description">
-                  <p>Sistema completo de gestão de projetos com acompanhamento de tarefas, prazos e recursos. Permite gerenciar múltiplos projetos simultaneamente, com dashboards personalizados.</p>
-                </div>
-                <ul class="project-tech-list">
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>CSS</li>
-                </ul>
-                <div class="project-links">
-                  <a href="https://github.com/adelsonsaguateDev/costs" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="ti-github"></i></a>
-                </div>
-              </div>
-              <div class="project-image">
-                <a href="https://github.com/adelsonsaguateDev/costs" target="_blank">
-                  <img src="assets/imgs/folio-1.png" alt="Gestão de Projetos">
-                </a>
-              </div>
+        <nav class="main-nav">
+          <ul id="nav-links">
+            <li>
+              <a class="nav-link" href="#about"
+                ><span class="nav-indicator"></span
+                ><span class="nav-text">Sobre</span></a
+              >
             </li>
-
-            <!-- Project 2 -->
-            <li class="featured-project" data-aos="fade-up">
-              <div class="project-content">
-                <p class="project-overline">Projeto em Destaque</p>
-                <h3 class="project-title"><a href="https://github.com/adelsonsaguateDev/gestao_armazens" target="_blank">Gestão de Armazéns</a></h3>
-                <div class="project-description">
-                  <p>Sistema abrangente para controle de estoque e logística de armazéns. Inclui funcionalidades para rastreamento de produtos, gestão de inventário e otimização de espaço.</p>
-                </div>
-                <ul class="project-tech-list">
-                  <li>Laravel</li>
-                  <li>PHP</li>
-                  <li>JavaScript</li>
-                  <li>MySQL</li>
-                </ul>
-                <div class="project-links">
-                  <a href="https://github.com/adelsonsaguateDev/gestao_armazens" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="ti-github"></i></a>
-                </div>
-              </div>
-              <div class="project-image">
-                <a href="https://github.com/adelsonsaguateDev/gestao_armazens" target="_blank">
-                  <img src="assets/imgs/folio-2.png" alt="Gestão de Armazéns">
-                </a>
-              </div>
+            <li>
+              <a class="nav-link" href="#experience"
+                ><span class="nav-indicator"></span
+                ><span class="nav-text">Experiência</span></a
+              >
             </li>
-
-            <!-- Project 3 -->
-            <li class="featured-project" data-aos="fade-up">
-              <div class="project-content">
-                <p class="project-overline">Projeto em Destaque</p>
-                <h3 class="project-title"><a href="https://github.com/adelsonsaguateDev/gestao_salas" target="_blank">Portal de Gestão de Salas</a></h3>
-                <div class="project-description">
-                  <p>Solução para instituições educacionais gerenciarem a alocação de salas para exames. Permite agendamento, controle de capacidade e monitoramento de ocupação em tempo real.</p>
-                </div>
-                <ul class="project-tech-list">
-                  <li>Laravel</li>
-                  <li>PHP</li>
-                  <li>JavaScript</li>
-                  <li>MySQL</li>
-                </ul>
-                <div class="project-links">
-                  <a href="https://github.com/adelsonsaguateDev/gestao_salas" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="ti-github"></i></a>
-                </div>
-              </div>
-              <div class="project-image">
-                <a href="https://github.com/adelsonsaguateDev/gestao_salas" target="_blank">
-                  <img src="assets/imgs/folio-3.png" alt="Portal de Gestão de Salas de Exame">
-                </a>
-              </div>
+            <li>
+              <a class="nav-link" href="#portfolio"
+                ><span class="nav-indicator"></span
+                ><span class="nav-text">Projetos</span></a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="#contact"
+                ><span class="nav-indicator"></span
+                ><span class="nav-text">Contacto</span></a
+              >
             </li>
           </ul>
+        </nav>
+
+        <div class="social-links">
+          <a
+            href="https://github.com/adelsonsaguateDev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="GitHub"
+            ><i class="ti-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/adelsonsaguate/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="LinkedIn"
+            ><i class="ti-linkedin"></i
+          ></a>
+          <a href="mailto:adelsonsaguate.it@gmail.com" title="Email"
+            ><i class="ti-email"></i
+          ></a>
         </div>
-      </section>
+      </aside>
 
-      <!-- CONTACT SECTION -->
-      <section id="contact" class="content-section contact-section" data-aos="fade-up">
-        <h2 class="numbered-heading"><span>03.</span> Qual o próximo passo?</h2>
-        <h3 class="contact-title">Entre em Contacto</h3>
-        <p class="contact-text">
-          Estou sempre aberto a novas oportunidades e colaborações. Se você tem um projeto em mente, uma pergunta ou apenas quer dizer olá, minha caixa de entrada está sempre aberta.
-        </p>
-        <a href="mailto:adelsonsaguate.it@gmail.com" class="btn btn-primary">Diga Olá</a>
-      </section>
+      <!-- ================== RIGHT PANE (Scrollable) ================== -->
+      <main id="main-content" class="right-pane">
+        <!-- INTRO SECTION -->
+        <section id="intro" class="content-section intro-section">
+          <div data-aos="fade-up">
+            <p class="intro-bio">
+              Profissional dedicado e apaixonado por tecnologia, com formação em
+              Informática e experiência no desenvolvimento de soluções web, ERP
+              e integração de sistemas. O meu objetivo é criar aplicações
+              robustas e seguras que resolvam problemas reais, contribuindo para
+              a transformação digital de organizações.
+            </p>
+            <p class="intro-bio">
+              Ao longo do meu percurso, tenho trabalhado com tecnologias como
+              PHP, Laravel, React, MySQL, Docker e AWS, sempre com foco na
+              eficiência, escalabilidade e experiência do utilizador.
+            </p>
+            <a
+              href="assets/cv/Adelson_Manuel_Saguate_CV.pdf"
+              download="Adelson_Saguate_CV.pdf"
+              target="_blank"
+              class="btn"
+            >
+              Download CV
+            </a>
+          </div>
+        </section>
 
-      <!-- FOOTER -->
-      <footer class="main-footer">
-        <p>
-          <a href="https://github.com/adelsonsaguateDev/adelsonsaguate.porfolio" target="_blank" rel="noopener noreferrer">
-            Inspirado em Brittany Chiang. Construído por Adelson Saguate &amp; Gemini
-          </a>
-        </p>
-      </footer>
-    </main>
-  </div>
+        <!-- ABOUT SECTION -->
+        <section id="about" class="content-section">
+          <div data-aos="fade-up">
+            <h2 class="numbered-heading"><span>01.</span> Sobre Mim</h2>
+            <div class="about-content">
+              <div class="about-text">
+                <p>
+                  Sou formado em Engenharia de Desenvolvimento de Sistemas pela
+                  Universidade Pedagógica de Maputo (2019-2022), com
+                  especialização em desenvolvimento de software e soluções ERP
+                  para diversos sectores.
+                </p>
+                <p>
+                  Atualmente trabalho na International Trading & Solutions, onde
+                  desenvolvo e mantenho sistemas ERP para entidades públicas e
+                  privadas. Tenho experiência sólida em gestão de bases de
+                  dados, integração de APIs RESTful e desenvolvimento de
+                  interfaces user-friendly que melhoram a eficiência
+                  operacional.
+                </p>
+                <p>
+                  Anteriormente trabalhei no Departamento de Extensão e Inovação
+                  da Universidade Pedagógica (2022-2023), desenvolvendo
+                  aplicações web e mobile para gestão energética, fornecendo
+                  suporte técnico aos utilizadores e criando documentação
+                  técnica.
+                </p>
+                <p>
+                  Entre os principais projetos que desenvolvi estão sistemas de
+                  gestão de crédito agrário, reconciliação bancária, gestão de
+                  stock com código de barras, e soluções para farmácias e
+                  importadoras. Tenho também certificações em Amazon Web
+                  Services (AWS) com conhecimentos em EC2, Lambda, S3, RDS e
+                  outros serviços.
+                </p>
 
-  <!-- AOS (Animate on Scroll) JS -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  
-  <!-- Main JS -->
-  <script src="assets/js/main.js"></script>
+                <div class="tech-skills">
+                  <p>Principais tecnologias e competências:</p>
+                  <ul class="tech-grid">
+                    <li>C# & .NET Framework</li>
+                    <li>PHP & Laravel</li>
+                    <li>JavaScript & React</li>
+                    <li>Python & Flask</li>
+                    <li>MySQL & PostgreSQL</li>
+                    <li>AWS Services</li>
+                    <li>Docker & Git</li>
+                    <li>UX/UI Design</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-</body>
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="content-section">
+          <div data-aos="fade-up">
+            <h2 class="numbered-heading"><span>02.</span> Onde Trabalhei</h2>
+
+            <div class="experience-container">
+              <ul class="job-tabs" role="tablist">
+                <li>
+                  <button
+                    class="job-tab active"
+                    id="tab-its"
+                    role="tab"
+                    aria-selected="true"
+                  >
+                    ITS/Universo
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="job-tab"
+                    id="tab-up"
+                    role="tab"
+                    aria-selected="false"
+                  >
+                    UP
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="job-tab"
+                    id="tab-projetos"
+                    role="tab"
+                    aria-selected="false"
+                  >
+                    Projetos
+                  </button>
+                </li>
+              </ul>
+
+              <div class="job-panels">
+                <div class="job-panel active" id="panel-its">
+                  <h3 class="job-title">
+                    Desenvolvedor de Sistemas Web
+                    <span class="job-company"
+                      >@ International Trading & Solutions</span
+                    >
+                  </h3>
+                  <p class="job-date">Junho 2023 — Presente</p>
+                  <ul class="job-details">
+                    <li>
+                      Manutenção e desenvolvimento de soluções ERP para
+                      entidades públicas e privadas
+                    </li>
+                    <li>
+                      Gestão e otimização de bases de dados (MySQL, PostgreSQL)
+                    </li>
+                    <li>
+                      Implementação e consumo de APIs RESTful para integração
+                      entre sistemas
+                    </li>
+                    <li>
+                      Refatorização de código (frontend e backend) e otimização
+                      de UX/UI
+                    </li>
+                    <li>
+                      Criação de dashboards e relatórios para sistemas de gestão
+                    </li>
+                    <li>
+                      Desenvolvimento de sistemas especializados: Gestão de
+                      Processos, Crédito Agrário, Reconciliação Bancária, Gestão
+                      de Farmácia e Stock
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="job-panel" id="panel-up">
+                  <h3 class="job-title">
+                    Desenvolvedor Junior
+                    <span class="job-company">@ Universidade Pedagógica</span>
+                  </h3>
+                  <p class="job-date">Abril 2022 — Maio 2023</p>
+                  <ul class="job-details">
+                    <li>
+                      Desenvolvimento de aplicações web e mobile para gestão
+                      energética
+                    </li>
+                    <li>Assistência técnica e suporte aos utilizadores</li>
+                    <li>
+                      Documentação técnica e desenvolvimento de manuais de
+                      utilizador
+                    </li>
+                    <li>
+                      Colaboração em projetos de extensão e inovação da
+                      universidade
+                    </li>
+                    <li>Manutenção de sistemas académicos e administrativos</li>
+                  </ul>
+                </div>
+
+                <div class="job-panel" id="panel-projetos">
+                  <h3 class="job-title">
+                    Projetos de Destaque
+                    <span class="job-company">@ Desenvolvidos</span>
+                  </h3>
+                  <p class="job-date">2020 — Presente</p>
+                  <ul class="job-details">
+                    <li>
+                      Sistema de Gestão de Crédito Agrário com módulos de
+                      desembolso e amortização
+                    </li>
+                    <li>
+                      Sistema de Reconciliação Bancária com melhorias de
+                      performance
+                    </li>
+                    <li>
+                      Sistema de Gestão de Stock com inventário por código de
+                      barras
+                    </li>
+                    <li>Sistema de Gestão de Farmácia e Importadoras</li>
+                    <li>
+                      Portais de gestão académica e sistemas de relatórios
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio" class="content-section">
+          <div data-aos="fade-up">
+            <h2 class="numbered-heading">
+              <span>03.</span> Projetos em Destaque
+            </h2>
+
+            <ul class="featured-projects-list">
+              <!-- Project 1 -->
+              <li class="featured-project" data-aos="fade-up">
+                <div class="project-content">
+                  <p class="project-overline">Projeto em Destaque</p>
+                  <h3 class="project-title">
+                    <a
+                      href="https://github.com/adelsonsaguateDev/costs"
+                      target="_blank"
+                      >Sistema de Gestão de Projetos</a
+                    >
+                  </h3>
+                  <div class="project-description">
+                    <p>
+                      Plataforma completa para gestão de projetos com dashboards
+                      personalizados, acompanhamento de prazos, controle de
+                      recursos e relatórios detalhados. Inclui sistema de
+                      notificações e gestão de equipas.
+                    </p>
+                  </div>
+                  <ul class="project-tech-list">
+                    <li>React</li>
+                    <li>JavaScript</li>
+                    <li>CSS3</li>
+                    <li>JSON</li>
+                  </ul>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/adelsonsaguateDev/costs"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="GitHub"
+                      ><i class="ti-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="project-image">
+                  <a
+                    href="https://github.com/adelsonsaguateDev/costs"
+                    target="_blank"
+                  >
+                    <img
+                      src="assets/imgs/folio-1.png"
+                      alt="Sistema de Gestão de Projetos"
+                    />
+                  </a>
+                </div>
+              </li>
+
+              <!-- Project 2 -->
+              <li class="featured-project" data-aos="fade-up">
+                <div class="project-content">
+                  <p class="project-overline">Projeto em Destaque</p>
+                  <h3 class="project-title">
+                    <a
+                      href="https://github.com/adelsonsaguateDev/gestao_armazens"
+                      target="_blank"
+                      >Sistema de Gestão de Armazéns</a
+                    >
+                  </h3>
+                  <div class="project-description">
+                    <p>
+                      Solução abrangente para controle de inventário e
+                      logística. Funcionalidades incluem rastreamento em tempo
+                      real, gestão de fornecedores, relatórios de movimento e
+                      otimização de espaço de armazenamento.
+                    </p>
+                  </div>
+                  <ul class="project-tech-list">
+                    <li>Laravel</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                  </ul>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/adelsonsaguateDev/gestao_armazens"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="GitHub"
+                      ><i class="ti-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="project-image">
+                  <a
+                    href="https://github.com/adelsonsaguateDev/gestao_armazens"
+                    target="_blank"
+                  >
+                    <img
+                      src="assets/imgs/folio-2.png"
+                      alt="Sistema de Gestão de Armazéns"
+                    />
+                  </a>
+                </div>
+              </li>
+
+              <!-- Project 3 -->
+              <li class="featured-project" data-aos="fade-up">
+                <div class="project-content">
+                  <p class="project-overline">Projeto em Destaque</p>
+                  <h3 class="project-title">
+                    <a
+                      href="https://github.com/adelsonsaguateDev/gestao_salas"
+                      target="_blank"
+                      >Portal de Gestão de Salas</a
+                    >
+                  </h3>
+                  <div class="project-description">
+                    <p>
+                      Sistema especializado para instituições educacionais
+                      gerirem alocação de salas para exames. Inclui agendamento
+                      inteligente, controle de capacidade, monitoramento de
+                      ocupação e geração de relatórios estatísticos.
+                    </p>
+                  </div>
+                  <ul class="project-tech-list">
+                    <li>Laravel</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>JavaScript</li>
+                    <li>Chart.js</li>
+                  </ul>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/adelsonsaguateDev/gestao_salas"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="GitHub"
+                      ><i class="ti-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="project-image">
+                  <a
+                    href="https://github.com/adelsonsaguateDev/gestao_salas"
+                    target="_blank"
+                  >
+                    <img
+                      src="assets/imgs/folio-3.png"
+                      alt="Portal de Gestão de Salas"
+                    />
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section
+          id="contact"
+          class="content-section contact-section"
+          data-aos="fade-up"
+        >
+          <h2 class="numbered-heading">
+            <span>04.</span> Qual o Próximo Passo?
+          </h2>
+          <h3 class="contact-title">Vamos Conversar</h3>
+          <p class="contact-text">
+            Estou sempre interessado em novas oportunidades, projetos
+            desafiantes e colaborações. Se tem uma ideia, projeto ou apenas quer
+            trocar experiências sobre tecnologia, será um prazer conversar.
+          </p>
+          <a href="mailto:adelsonsaguate.it@gmail.com" class="btn"
+            >Entrar em Contacto</a
+          >
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="main-footer">
+          <p>
+            <a
+              href="https://github.com/adelsonsaguateDev/adelsonsaguate.porfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Inspirado em Brittany Chiang. Desenvolvido por Adelson Saguate
+            </a>
+          </p>
+        </footer>
+      </main>
+    </div>
+
+    <!-- AOS (Animate on Scroll) JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Main JS -->
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 600,
+        easing: "ease-in-out",
+        once: true,
+        mirror: false,
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Active navigation highlighting
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      function updateActiveNav() {
+        const scrollPos = window.scrollY + 100;
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          const sectionId = section.getAttribute("id");
+
+          if (
+            scrollPos >= sectionTop &&
+            scrollPos < sectionTop + sectionHeight
+          ) {
+            navLinks.forEach((link) => {
+              link.classList.remove("active");
+              if (link.getAttribute("href") === `#${sectionId}`) {
+                link.classList.add("active");
+              }
+            });
+          }
+        });
+      }
+
+      window.addEventListener("scroll", updateActiveNav);
+      window.addEventListener("load", updateActiveNav);
+
+      // Experience tabs functionality
+      const jobTabs = document.querySelectorAll(".job-tab");
+      const jobPanels = document.querySelectorAll(".job-panel");
+
+      jobTabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => {
+          // Remove active class from all tabs and panels
+          jobTabs.forEach((t) => {
+            t.classList.remove("active");
+            t.setAttribute("aria-selected", "false");
+          });
+          jobPanels.forEach((panel) => panel.classList.remove("active"));
+
+          // Add active class to clicked tab and corresponding panel
+          tab.classList.add("active");
+          tab.setAttribute("aria-selected", "true");
+          jobPanels[index].classList.add("active");
+        });
+      });
+
+      // Intersection Observer for fade-in animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe all sections
+      sections.forEach((section) => {
+        observer.observe(section);
+      });
+    </script>
+  </body>
 </html>

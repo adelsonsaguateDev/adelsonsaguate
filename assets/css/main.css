@@ -106,6 +106,20 @@ section.content-section {
 
 .profile-header .profile-title {
   color: var(--white);
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.profile-header .profile-bio {
+  color: var(--slate);
+  font-size: var(--fz-lg);
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+.profile-header .profile-title {
+  color: var(--white);
   font-size: 24px;
   margin-top: 10px;
 }
@@ -170,6 +184,49 @@ section.content-section {
 }
 
 /* RIGHT PANE STYLES */
+
+/* INTRO SECTION */
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh; /* Make it take the full viewport height */
+  padding: 0; /* Override default section padding */
+}
+
+.intro-hello {
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: var(--fz-md);
+  margin-bottom: 20px;
+}
+
+.intro-name-main {
+  color: var(--lightest-slate);
+  font-size: clamp(40px, 8vw, 80px); /* Responsive font size */
+  font-weight: 700;
+  margin: 0;
+}
+
+.intro-tagline {
+  color: var(--slate);
+  font-size: clamp(30px, 7vw, 70px); /* Responsive font size */
+  font-weight: 700;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.intro-bio {
+  color: var(--slate);
+  max-width: 540px;
+  margin-top: 25px;
+  font-size: var(--fz-lg);
+}
+
+.intro-section .btn {
+  margin-top: 50px;
+}
+
 .numbered-heading {
   display: flex;
   align-items: center;
