@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Criar slides
         slidesHTML += `
             <div class="carousel-slide" data-project-id="${project.id}">
-              <img src="${project.mainImage}" alt="${project.title}">
+              <img src="${project.mainImage}" alt="${project.title}" loading="lazy">
               <div  class="carousel-caption">
                 <h4 >${project.title}</h4>
               </div>
@@ -91,16 +91,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Criar indicadores
         indicatorsHTML += `
-            <span class="carousel-indicator ${
-              index === 0 ? "active" : ""
-            }" data-index="${index}"></span>
+            <span class="carousel-indicator ${index === 0 ? "active" : ""}" data-index="${index}" role="button" aria-label="Ir para o slide ${index + 1}" ${index === 0 ? 'aria-current="true"' : ''}></span>
           `;
 
         // Criar miniaturas
         thumbnailsHTML += `
-            <img src="${project.mainImage}" class="carousel-thumbnail ${
-          index === 0 ? "active" : ""
-        }" data-index="${index}" alt="Miniatura ${index + 1}">
+            <img src="${project.mainImage}" class="carousel-thumbnail ${index === 0 ? "active" : ""}" data-index="${index}" alt="Miniatura ${index + 1}" loading="lazy">
           `;
       });
 
@@ -122,15 +118,18 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       currentIndex = index;
-      carousel.style.transform = `translateX(-${
-        currentIndex * slideWidth
-      }%)`;
+      carousel.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
 
       // Atualizar indicadores
       document
         .querySelectorAll(".carousel-indicator")
         .forEach((indicator, i) => {
           indicator.classList.toggle("active", i === currentIndex);
+          if (i === currentIndex) {
+            indicator.setAttribute('aria-current', 'true');
+          } else {
+            indicator.removeAttribute('aria-current');
+          }
         });
 
       // Atualizar miniaturas
@@ -164,11 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
       let galleryHTML = "";
       currentProject.gallery.forEach((imgSrc, i) => {
         galleryHTML += `
-            <img src="${imgSrc}" class="gallery-image" style="--index:${
-          i + 1
-        }" alt="${currentProject.title} - Imagem ${
-          i + 1
-        }" data-src="${imgSrc}">
+            <img src="${imgSrc}" class="gallery-image" style="--index:${i + 1}" alt="${currentProject.title} - Imagem ${i + 1}" data-src="${imgSrc}" loading="lazy">
           `;
       });
       projectGallery.innerHTML = galleryHTML;
@@ -225,6 +220,10 @@ document.addEventListener("DOMContentLoaded", function () {
       nextBtn.addEventListener("click", () => {
         goToSlide(currentIndex + 1);
       });
+
+      // Adicionar atributos ARIA aos botões de navegação
+      prevBtn.setAttribute('aria-label', 'Slide anterior');
+      nextBtn.setAttribute('aria-label', 'Próximo slide');
 
       // Event listeners para os indicadores
       document

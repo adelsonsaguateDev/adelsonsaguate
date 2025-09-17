@@ -30,6 +30,9 @@ $(document).ready(function(){
         } 
     });
 
+    // Explicitly initialize Bootstrap Scrollspy
+    $('body').scrollspy({ target: '.custom-navbar', offset: 40 });
+
     $(document).on("click", "#baixar_cv", function (e) {
         e.preventDefault();
         window.open("assets/cv/Adelson_Manuel_Saguate_CV.pdf", "_blank");

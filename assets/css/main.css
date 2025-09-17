@@ -1998,6 +1998,11 @@ pre code {
 }
 
 .table-danger th,
+.custom-navbar .nav .item .link.active {
+  color: var(--primary) !important; /* Use the primary color for active link */
+  border-bottom: 2px solid var(--primary) !important; /* Add a bottom border */
+  padding-bottom: 3px !important; /* Adjust padding to make space for the border */
+}
 .table-danger td,
 .table-danger thead th,
 .table-danger tbody + tbody {
